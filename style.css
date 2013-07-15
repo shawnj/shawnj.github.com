@@ -1,3 +1,9 @@
 html {
 	background-color: #EEE;
 }
+
+div.sidebar {
+	background-color: #686868;
+	width: 1%
+	float: left;
+}
