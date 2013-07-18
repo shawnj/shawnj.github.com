@@ -1,3 +1,5 @@
+@import "compass";
+
 html,
 button,
 input,
@@ -52,28 +54,96 @@ header {
 		}
 
 a.btn {
-	color: #fff;
+	width: 92px;
+    height: 38px;
+    border: 1px solid #007ad1;
+
+    color: #fff;
 	font-size: 19px;
 	text-shadow: 0 -1px 0 rgba(0,0,0,.26);
 	padding: 10px 30px;
 	text-decoration: none;
 
-    width: 92px;
-    height: 38px;
-    border: 1px solid #007ad1;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
+    @include border-radius(4px);
+    @include background-clip(padding-box);
     background-color: #fdfdfd;
-    -moz-box-shadow: 0 1px 0 #006bb7;
-    -webkit-box-shadow: 0 1px 0 #006bb7;
-    box-shadow: 0 1px 0 #006bb7;
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDk0IDQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9ImhhdDAiIGdyYWRpZW50VW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiB4MT0iNTAlIiB5MT0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzNGExZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNGExZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9Ijk0IiBoZWlnaHQ9IjQwIiBmaWxsPSJ1cmwoI2hhdDApIiAvPgo8L3N2Zz4=);
-    background-image: -moz-linear-gradient(top, #34a1ed 0%, #34a1ed 100%);
-    background-image: -o-linear-gradient(top, #34a1ed 0%, #34a1ed 100%);
-    background-image: -webkit-linear-gradient(top, #34a1ed 0%, #34a1ed 100%);
-    background-image: linear-gradient(top, #34a1ed 0%, #34a1ed 100%);
+    @include box-shadow(0 1px 0 #006bb7);
+    @include background-image(linear-gradient(top, #34a1ed 0%, #34a1ed 100%));
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
 }
