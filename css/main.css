@@ -40,13 +40,10 @@ header {
 
 a.btn {
   padding: 10px 30px;
-  text-decoration: none;
-  color: #fff;
-  border: 1px solid #007ad1;
-  width: 92px;
-  height: 38px;
   font-size: 19px;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.26);
+  text-decoration: none;
+  color: #fff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -55,15 +52,27 @@ a.btn {
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  background-color: #fdfdfd;
-  -webkit-box-shadow: 0 1px 0 #006bb7;
-  -moz-box-shadow: 0 1px 0 #006bb7;
-  box-shadow: 0 1px 0 #006bb7;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #34a1ed), color-stop(100%, #34a1ed));
-  background-image: -webkit-linear-gradient(top, #34a1ed 0%, #34a1ed 100%);
-  background-image: -moz-linear-gradient(top, #34a1ed 0%, #34a1ed 100%);
-  background-image: -o-linear-gradient(top, #34a1ed 0%, #34a1ed 100%);
-  background-image: linear-gradient(top, #34a1ed 0%, #34a1ed 100%); }
+  background-color: #fdfdfd; }
+  a.btn.blue {
+    border: 1px solid #007ad1;
+    -webkit-box-shadow: 0 1px 0 #006bb7;
+    -moz-box-shadow: 0 1px 0 #006bb7;
+    box-shadow: 0 1px 0 #006bb7;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #34a1ed), color-stop(100%, #34a1ed));
+    background-image: -webkit-linear-gradient(top, #34a1ed 0%, #34a1ed 100%);
+    background-image: -moz-linear-gradient(top, #34a1ed 0%, #34a1ed 100%);
+    background-image: -o-linear-gradient(top, #34a1ed 0%, #34a1ed 100%);
+    background-image: linear-gradient(top, #34a1ed 0%, #34a1ed 100%); }
+  a.btn.green {
+    border: 1px solid #309d47;
+    -webkit-box-shadow: 0 1px 0 #2c9f44;
+    -moz-box-shadow: 0 1px 0 #2c9f44;
+    box-shadow: 0 1px 0 #2c9f44;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #49c664), color-stop(100%, #49c664));
+    background-image: -webkit-linear-gradient(top, #49c664 0%, #49c664 100%);
+    background-image: -moz-linear-gradient(top, #49c664 0%, #49c664 100%);
+    background-image: -o-linear-gradient(top, #49c664 0%, #49c664 100%);
+    background-image: linear-gradient(top, #49c664 0%, #49c664 100%); }
 
 /* ==========================================================================
    Helper classes
