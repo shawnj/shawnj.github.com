@@ -60,16 +60,16 @@ a {
 		color: #fff;
 
 		border: 1px solid #007ad1;
-	    width: 92px;
-    	height: 38px;
-    	font-size: 19px;
-    	text-shadow: 0 -1px 0 rgba(0,0,0,.26);
-    
-    	@include border-radius(4px);
-    	@include background-clip(padding-box);
-    	background-color: #fdfdfd;
-    	@include box-shadow(0 1px 0 #006bb7);
-    	@include background-image(linear-gradient(top, #34a1ed 0%, #34a1ed 100%));
+		width: 92px;
+		height: 38px;
+		font-size: 19px;
+		text-shadow: 0 -1px 0 rgba(0,0,0,.26);
+	
+		@include border-radius(4px);
+		@include background-clip(padding-box);
+		background-color: #fdfdfd;
+		@include box-shadow(0 1px 0 #006bb7);
+		@include background-image(linear-gradient(top, #34a1ed 0%, #34a1ed 100%));
 	}
 }
 
