@@ -15,12 +15,12 @@ body {
 }
 
 ::-moz-selection {
-	background: #BFBFBF;
+	background: #e5e5e5;
 	text-shadow: none;
 }
 
 ::selection {
-	background: #BFBFBF;
+	background: #e5e5e5;
 	text-shadow: none;
 }
 
@@ -92,7 +92,7 @@ nav {
    ========================================================================== */
 
 html, body {
-	height: 95.65%;
+	height: 100%;
 }
 
 .wrap {
@@ -119,6 +119,10 @@ div.row {
 	width: 100%;
 	text-align: center;
 	padding-top: 4px;
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
 }
 
 /* ==========================================================================

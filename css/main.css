@@ -11,11 +11,11 @@ body {
   line-height: 1.4; }
 
 ::-moz-selection {
-  background: #BFBFBF;
+  background: #e5e5e5;
   text-shadow: none; }
 
 ::selection {
-  background: #BFBFBF;
+  background: #e5e5e5;
   text-shadow: none; }
 
 /* ==========================================================================
@@ -84,7 +84,7 @@ nav a.btn {
    Footer
    ========================================================================== */
 html, body {
-  height: 95.65%; }
+  height: 100%; }
 
 .wrap {
   min-height: 100%;
@@ -106,6 +106,9 @@ div.row {
   width: 100%;
   text-align: center;
   padding-top: 4px; }
+  div.row a {
+    text-decoration: none;
+    color: inherit; }
 
 /* ==========================================================================
    Helper classes
