@@ -28,7 +28,6 @@ section, header, footer {
   display: block; }
 
 header {
-  padding: 30px;
   background: inherit;
   max-width: 600px;
   margin: 0 auto;
@@ -37,7 +36,13 @@ header {
   header h1 {
     font-size: 5em; }
 
-a.btn {
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+nav li.tile {
+  display: inline; }
+nav a.btn {
   padding: 10px 30px;
   font-size: 19px;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.26);
@@ -52,7 +57,7 @@ a.btn {
   -moz-background-clip: padding;
   background-clip: padding-box;
   background-color: #fdfdfd; }
-  a.btn.blue {
+  nav a.btn.blue {
     border: 1px solid #007ad1;
     -webkit-box-shadow: 0 1px 0 #006bb7;
     -moz-box-shadow: 0 1px 0 #006bb7;
@@ -62,7 +67,7 @@ a.btn {
     background-image: -moz-linear-gradient(top, #34a1ed 0%, #34a1ed 100%);
     background-image: -o-linear-gradient(top, #34a1ed 0%, #34a1ed 100%);
     background-image: linear-gradient(top, #34a1ed 0%, #34a1ed 100%); }
-  a.btn.green {
+  nav a.btn.green {
     border: 1px solid #309d47;
     -webkit-box-shadow: 0 1px 0 #2c9f44;
     -moz-box-shadow: 0 1px 0 #2c9f44;
