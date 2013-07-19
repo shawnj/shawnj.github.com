@@ -5,7 +5,7 @@ button,
 input,
 select,
 textarea {
-	color: #262626;
+	color: #454545;
 	font-family: sans-serif;
 }
 
@@ -30,7 +30,7 @@ body {
    ========================================================================== */
 
 html {
-	background-color: #FAFAFA;
+	background-color: #EFEFEF;
 }
 
 section, header, footer {
@@ -42,7 +42,6 @@ header {
 	max-width: 600px;
 	margin: 0 auto;
 	text-align: center;
-	font-color: #262626;
 	h1 {
 		font-size: 5em;
 	}
@@ -64,21 +63,25 @@ nav {
 		&.btn {
 			padding: 10px 30px;
 			font-size: 19px;
-			text-shadow: 0 -1px 0 rgba(0,0,0,.26);
 			text-decoration: none;
 			color: #fff;
 			@include border-radius(4px);
 			@include background-clip(padding-box);
-			background-color: #fdfdfd;
 			&.blue {    
-				border: 1px solid #007ad1;
-				@include box-shadow(0 1px 0 #006bb7);
-				@include background-image(linear-gradient(top, #34a1ed 0%, #34a1ed 100%));
+				background-color: #3498db;
+				@include transition(0.25s all ease);
+				&:hover {
+					background-color: #5bc0de;
+					@include transition(0.25s all ease);
+				}
 			}
 			&.green {
-				border: 1px solid #309d47;
-				@include box-shadow(0 1px 0 #2c9f44);
-				@include background-image(linear-gradient(top, #49c664 0%, #49c664 100%));
+				background-color: #1abc9c;
+				@include transition(0.25s all ease);
+				&:hover {
+					background-color: #57c9ae;
+					@include transition(0.25s all ease);
+				}
 			}
 		}
 	}

@@ -3,7 +3,7 @@ button,
 input,
 select,
 textarea {
-  color: #262626;
+  color: #454545;
   font-family: sans-serif; }
 
 body {
@@ -22,7 +22,7 @@ body {
    Custom styles
    ========================================================================== */
 html {
-  background-color: #FAFAFA; }
+  background-color: #EFEFEF; }
 
 section, header, footer {
   display: block; }
@@ -31,8 +31,7 @@ header {
   background: inherit;
   max-width: 600px;
   margin: 0 auto;
-  text-align: center;
-  font-color: #262626; }
+  text-align: center; }
   header h1 {
     font-size: 5em; }
 
@@ -46,7 +45,6 @@ nav li.tile {
 nav a.btn {
   padding: 10px 30px;
   font-size: 19px;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.26);
   text-decoration: none;
   color: #fff;
   -webkit-border-radius: 4px;
@@ -56,28 +54,31 @@ nav a.btn {
   border-radius: 4px;
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
-  background-clip: padding-box;
-  background-color: #fdfdfd; }
+  background-clip: padding-box; }
   nav a.btn.blue {
-    border: 1px solid #007ad1;
-    -webkit-box-shadow: 0 1px 0 #006bb7;
-    -moz-box-shadow: 0 1px 0 #006bb7;
-    box-shadow: 0 1px 0 #006bb7;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #34a1ed), color-stop(100%, #34a1ed));
-    background-image: -webkit-linear-gradient(top, #34a1ed 0%, #34a1ed 100%);
-    background-image: -moz-linear-gradient(top, #34a1ed 0%, #34a1ed 100%);
-    background-image: -o-linear-gradient(top, #34a1ed 0%, #34a1ed 100%);
-    background-image: linear-gradient(top, #34a1ed 0%, #34a1ed 100%); }
+    background-color: #3498db;
+    -webkit-transition: 0.25s all ease;
+    -moz-transition: 0.25s all ease;
+    -o-transition: 0.25s all ease;
+    transition: 0.25s all ease; }
+    nav a.btn.blue:hover {
+      background-color: #5bc0de;
+      -webkit-transition: 0.25s all ease;
+      -moz-transition: 0.25s all ease;
+      -o-transition: 0.25s all ease;
+      transition: 0.25s all ease; }
   nav a.btn.green {
-    border: 1px solid #309d47;
-    -webkit-box-shadow: 0 1px 0 #2c9f44;
-    -moz-box-shadow: 0 1px 0 #2c9f44;
-    box-shadow: 0 1px 0 #2c9f44;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #49c664), color-stop(100%, #49c664));
-    background-image: -webkit-linear-gradient(top, #49c664 0%, #49c664 100%);
-    background-image: -moz-linear-gradient(top, #49c664 0%, #49c664 100%);
-    background-image: -o-linear-gradient(top, #49c664 0%, #49c664 100%);
-    background-image: linear-gradient(top, #49c664 0%, #49c664 100%); }
+    background-color: #1abc9c;
+    -webkit-transition: 0.25s all ease;
+    -moz-transition: 0.25s all ease;
+    -o-transition: 0.25s all ease;
+    transition: 0.25s all ease; }
+    nav a.btn.green:hover {
+      background-color: #57c9ae;
+      -webkit-transition: 0.25s all ease;
+      -moz-transition: 0.25s all ease;
+      -o-transition: 0.25s all ease;
+      transition: 0.25s all ease; }
 
 /* ==========================================================================
    Helper classes
