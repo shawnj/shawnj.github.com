@@ -40,16 +40,12 @@ section, header, footer {
 header {
 	padding: 30px;
 	background: inherit;
-	div {
-		&.width {
-			max-width: 600px;
-			margin: 0 auto;
-			text-align: center;
-			font-color: #262626;
-			h1 {
-				font-size: 5em;
-			}
-		}
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	font-color: #262626;
+	h1 {
+		font-size: 5em;
 	}
 }
 
