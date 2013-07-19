@@ -41,7 +41,8 @@ nav ul {
   padding: 0;
   list-style-type: none; }
 nav li.tile {
-  display: inline; }
+  display: inline;
+  padding: 0 2px; }
 nav a.btn {
   padding: 10px 30px;
   font-size: 19px;
