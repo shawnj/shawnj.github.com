@@ -34,9 +34,17 @@ header {
   text-align: center; }
   header h1 {
     font-size: 5em;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.26); }
-    header h1::selection {
-      text-shadow: 0 2px 0 rgba(0, 0, 0, 0.26); }
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.26);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    header h1:hover {
+      text-shadow: 0 4px 0 rgba(0, 0, 0, 0.26);
+      -webkit-transition: 0.2s;
+      -moz-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
 
 nav ul {
   margin: 0;

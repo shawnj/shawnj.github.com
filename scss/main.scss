@@ -44,9 +44,11 @@ header {
 	text-align: center;
 	h1 {
 		font-size: 5em;
-		@include text-shadow(0 -1px 0 rgba(0,0,0,.26));
-		&::selection {
-			@include text-shadow(0 2px 0 rgba(0,0,0,.26));
+		@include text-shadow(0 2px 0 rgba(0,0,0,.26));
+		@include transition(.2s);
+		&:hover {
+			@include text-shadow(0 4px 0 rgba(0,0,0,.26));
+			@include transition(0.2s);
 		}
 	}
 }
