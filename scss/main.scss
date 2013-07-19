@@ -88,6 +88,40 @@ nav {
 }
 
 /* ==========================================================================
+   Footer
+   ========================================================================== */
+
+html, body {
+	height: 100%;
+}
+
+.wrap {
+	min-height: 100%;
+	margin-bottom: -30px;
+	&:after {
+		content: "";
+		display: block;
+	}
+}
+
+.footer, .wrap:after{
+	height: 30px;
+}
+
+.footer {
+	background-color: #D8D8D8;
+	color: #999999;
+	font-size: 15px;
+	padding: 0;
+}
+
+div.row {
+	width: 100%;
+	text-align: center;
+	padding-top: 4px;
+}
+
+/* ==========================================================================
    Helper classes
    ========================================================================== */
 
