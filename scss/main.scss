@@ -44,6 +44,10 @@ header {
 	text-align: center;
 	h1 {
 		font-size: 5em;
+		@include text-shadow(0 -1px 0 rgba(0,0,0,.26));
+		&::selection {
+			@include text-shadow(0 2px 0 rgba(0,0,0,.26));
+		}
 	}
 }
 
@@ -67,6 +71,9 @@ nav {
 			color: #fff;
 			@include border-radius(4px);
 			@include background-clip(padding-box);
+			&::selection {
+				@include text-shadow(0 2px 0 rgba(0,0,0,.26));
+			}
 			&.blue {    
 				background-color: #3498db;
 				@include transition(0.25s all ease);

@@ -33,7 +33,10 @@ header {
   margin: 0 auto;
   text-align: center; }
   header h1 {
-    font-size: 5em; }
+    font-size: 5em;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.26); }
+    header h1::selection {
+      text-shadow: 0 2px 0 rgba(0, 0, 0, 0.26); }
 
 nav ul {
   margin: 0;
@@ -55,6 +58,8 @@ nav a.btn {
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box; }
+  nav a.btn::selection {
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.26); }
   nav a.btn.blue {
     background-color: #3498db;
     -webkit-transition: 0.25s all ease;
