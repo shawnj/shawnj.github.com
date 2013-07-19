@@ -11,11 +11,11 @@ body {
   line-height: 1.4; }
 
 ::-moz-selection {
-  background: #e5e5e5;
+  background: #e8e8e8;
   text-shadow: none; }
 
 ::selection {
-  background: #e5e5e5;
+  background: #e8e8e8;
   text-shadow: none; }
 
 /* ==========================================================================
@@ -75,11 +75,10 @@ nav a.btn {
     -o-transition: 0.25s all ease;
     transition: 0.25s all ease; }
     nav a.btn.blue:hover {
-      background-color: #5bc0de;
-      -webkit-transition: 0.25s all ease;
-      -moz-transition: 0.25s all ease;
-      -o-transition: 0.25s all ease;
-      transition: 0.25s all ease; }
+      background-color: #5bc0de; }
+    nav a.btn.blue:active {
+      background-color: #3280bf;
+      color: rgba(255, 255, 255, 0.75); }
   nav a.btn.green {
     background-color: #1abc9c;
     -webkit-transition: 0.25s all ease;
@@ -87,11 +86,10 @@ nav a.btn {
     -o-transition: 0.25s all ease;
     transition: 0.25s all ease; }
     nav a.btn.green:hover {
-      background-color: #57c9ae;
-      -webkit-transition: 0.25s all ease;
-      -moz-transition: 0.25s all ease;
-      -o-transition: 0.25s all ease;
-      transition: 0.25s all ease; }
+      background-color: #57c9ae; }
+    nav a.btn.green:active {
+      background-color: #16a085;
+      color: rgba(255, 255, 255, 0.75); }
 
 /* ==========================================================================
    Footer

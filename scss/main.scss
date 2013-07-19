@@ -15,12 +15,12 @@ body {
 }
 
 ::-moz-selection {
-	background: #e5e5e5;
+	background: #e8e8e8;
 	text-shadow: none;
 }
 
 ::selection {
-	background: #e5e5e5;
+	background: #e8e8e8;
 	text-shadow: none;
 }
 
@@ -81,7 +81,10 @@ nav {
 				@include transition(0.25s all ease);
 				&:hover {
 					background-color: #5bc0de;
-					@include transition(0.25s all ease);
+				}
+				&:active {
+					background-color: #3280bf;
+					color: rgba(255, 255, 255, 0.75);
 				}
 			}
 			&.green {
@@ -89,7 +92,10 @@ nav {
 				@include transition(0.25s all ease);
 				&:hover {
 					background-color: #57c9ae;
-					@include transition(0.25s all ease);
+				}
+				&:active {
+					background-color: #16a085;
+					color: rgba(255, 255, 255, 0.75);
 				}
 			}
 		}
