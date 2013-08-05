@@ -3,7 +3,7 @@ button,
 input,
 select,
 textarea {
-  color: #454545;
+  color: #DEDEDE;
   font-family: sans-serif; }
 
 body {
@@ -11,40 +11,35 @@ body {
   line-height: 1.4; }
 
 ::-moz-selection {
-  background: #e8e8e8;
-  text-shadow: none; }
+  background: #a0a3a7; }
 
 ::selection {
-  background: #e8e8e8;
-  text-shadow: none; }
+  background: #a0a3a7; }
 
 /* ==========================================================================
    Custom styles
    ========================================================================== */
 html {
-  background-color: #EFEFEF; }
+  background-color: #282829; }
 
 section, header, footer {
   display: block; }
 
 header {
-  background: inherit;
-  max-width: 600px;
+  background: #5c9cef url(#);
+  border-top: 12px solid #282829;
+  background-size: 100% auto;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  background-attachment: fixed;
+  padding: 100px 0 100px; }
   header h1 {
     font-size: 5em;
-    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.26);
+    text-shadow: 0 2px 3px rgba(40, 41, 42, 0.6), 0 4px 0 rgba(150, 150, 150, 0.5), 0 9px 5px rgba(0, 0, 0, 0.5);
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s; }
-    header h1:hover {
-      text-shadow: 0 4px 0 rgba(0, 0, 0, 0.26);
-      -webkit-transition: 0.2s;
-      -moz-transition: 0.2s;
-      -o-transition: 0.2s;
-      transition: 0.2s; }
 
 nav ul {
   margin: 0;
@@ -66,61 +61,35 @@ nav a.btn {
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box; }
-  nav a.btn::selection {
-    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.26); }
   nav a.btn.blue {
-    background-color: #3498db;
+    background-color: #8c8c8c;
     -webkit-transition: 0.25s all ease;
     -moz-transition: 0.25s all ease;
     -o-transition: 0.25s all ease;
     transition: 0.25s all ease; }
     nav a.btn.blue:hover {
-      background-color: #5bc0de; }
+      background-color: #afafaf; }
     nav a.btn.blue:active {
-      background-color: #3280bf;
+      background-color: #787878;
       color: rgba(255, 255, 255, 0.75); }
   nav a.btn.green {
-    background-color: #1abc9c;
+    background-color: #9E9E9E;
     -webkit-transition: 0.25s all ease;
     -moz-transition: 0.25s all ease;
     -o-transition: 0.25s all ease;
     transition: 0.25s all ease; }
     nav a.btn.green:hover {
-      background-color: #57c9ae; }
+      background-color: #b0b0b0; }
     nav a.btn.green:active {
-      background-color: #16a085;
+      background-color: #868686;
       color: rgba(255, 255, 255, 0.75); }
+
+p.content {
+  max-width: 960px; }
 
 /* ==========================================================================
    Footer
    ========================================================================== */
-html, body {
-  height: 100%; }
-
-.wrap {
-  min-height: 100%;
-  margin-bottom: -30px; }
-  .wrap:after {
-    content: "";
-    display: block; }
-
-.footer, .wrap:after {
-  height: 30px; }
-
-.footer {
-  background-color: #D8D8D8;
-  color: #999999;
-  font-size: 15px;
-  padding: 0; }
-
-div.row {
-  width: 100%;
-  text-align: center;
-  padding-top: 4px; }
-  div.row a {
-    text-decoration: none;
-    color: inherit; }
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
