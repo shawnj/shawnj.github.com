@@ -46,13 +46,13 @@ section, header, footer {
 
 section {
 	&.content {
-		background-color: rgba(40, 40, 41, 1);
+		background-color: rgba(40, 40, 41, .9);
 		padding: 100px;
 	}
 }
 
 header {
-	border-top: 12px solid #282829;
+	border-top: 50px solid rgba(40, 40, 41, .9);
 	margin: 0 auto;
 	text-align: center;
 	padding: 100px 0 100px;
@@ -88,23 +88,11 @@ nav {
 			color: #fff;
 			@include border-radius(4px);
 			@include background-clip(padding-box);
-			&.blue {    
+			&.header {    
 				background-color: #4c4c4c;
 				@include transition(0.25s all ease);
 				&:hover {
 					background-color: #afafaf;
-				}
-				&:active {
-					background-color: #787878;
-					// background-color: #a1a6a9;
-					color: rgba(255, 255, 255, 0.75);
-				}
-			}
-			&.green {
-				background-color: #4c4c4c;
-				@include transition(0.25s all ease);
-				&:hover {
-					background-color: #b0b0b0;
 				}
 				&:active {
 					background-color: #787878;

@@ -34,11 +34,11 @@ section, header, footer {
   display: block; }
 
 section.content {
-  background-color: #282829;
+  background-color: rgba(40, 40, 41, 0.9);
   padding: 100px; }
 
 header {
-  border-top: 12px solid #282829;
+  border-top: 50px solid rgba(40, 40, 41, 0.9);
   margin: 0 auto;
   text-align: center;
   padding: 100px 0 100px; }
@@ -73,26 +73,15 @@ nav a.btn {
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box; }
-  nav a.btn.blue {
+  nav a.btn.header {
     background-color: #4c4c4c;
     -webkit-transition: 0.25s all ease;
     -moz-transition: 0.25s all ease;
     -o-transition: 0.25s all ease;
     transition: 0.25s all ease; }
-    nav a.btn.blue:hover {
+    nav a.btn.header:hover {
       background-color: #afafaf; }
-    nav a.btn.blue:active {
-      background-color: #787878;
-      color: rgba(255, 255, 255, 0.75); }
-  nav a.btn.green {
-    background-color: #4c4c4c;
-    -webkit-transition: 0.25s all ease;
-    -moz-transition: 0.25s all ease;
-    -o-transition: 0.25s all ease;
-    transition: 0.25s all ease; }
-    nav a.btn.green:hover {
-      background-color: #b0b0b0; }
-    nav a.btn.green:active {
+    nav a.btn.header:active {
       background-color: #787878;
       color: rgba(255, 255, 255, 0.75); }
 
