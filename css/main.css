@@ -50,6 +50,9 @@ header {
     -o-transition: 0.2s;
     transition: 0.2s; }
 
+footer {
+  padding: 10px 100px 10px; }
+
 nav ul {
   margin: 0;
   padding: 0;

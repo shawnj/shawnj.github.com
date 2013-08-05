@@ -44,9 +44,11 @@ section, header, footer {
 	display: block;
 }
 
-section.content {
-	background-color: rgba(40, 40, 41, 1);
-	padding: 100px;
+section {
+	&.content {
+		background-color: rgba(40, 40, 41, 1);
+		padding: 100px;
+	}
 }
 
 header {
@@ -60,6 +62,10 @@ header {
 		@include text-shadow(0 2px 3px rgba(40, 41, 42, 0.6),0 4px 0 rgba(150, 150, 150, 0.5),0 9px 5px rgba(0, 0, 0, 0.5));
 		@include transition(.2s);
 	}
+}
+
+footer {
+	padding: 10px 100px 10px;
 }
 
 nav {
