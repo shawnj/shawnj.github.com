@@ -34,8 +34,8 @@ section, header, footer {
   display: block; }
 
 section.content {
-  background-color: rgba(40, 40, 41, 0.9);
-  padding: 100px 200px; }
+  background-color: rgba(229, 229, 229, 0.5);
+  padding: 5% 10%; }
 
 header {
   border-top: 50px solid rgba(40, 40, 41, 0.9);
@@ -51,7 +51,7 @@ header {
     transition: 0.2s; }
 
 footer {
-  padding: 10px 100px 10px; }
+  padding: 1% 5% 1%; }
 
 nav ul {
   margin: 0;
