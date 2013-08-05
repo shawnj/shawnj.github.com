@@ -35,7 +35,7 @@ section, header, footer {
 
 section.content {
   background-color: rgba(40, 40, 41, 0.9);
-  padding: 100px; }
+  padding: 100px 200px; }
 
 header {
   border-top: 50px solid rgba(40, 40, 41, 0.9);
