@@ -26,9 +26,12 @@ section, header, footer {
   display: block; }
 
 header {
-  background: #5c9cef url(#);
+  background: -webkit-linear-gradient(63deg, #999999 23%, transparent 23%) 7px 0, -webkit-linear-gradient(63deg, transparent 74%, #999999 78%), -webkit-linear-gradient(63deg, transparent 34%, #999999 38%, #999999 58%, transparent 62%), #444444;
+  background: -moz-linear-gradient(63deg, #999999 23%, transparent 23%) 7px 0, -moz-linear-gradient(63deg, transparent 74%, #999999 78%), -moz-linear-gradient(63deg, transparent 34%, #999999 38%, #999999 58%, transparent 62%), #444444;
+  background: -o-linear-gradient(63deg, #999999 23%, transparent 23%) 7px 0, -o-linear-gradient(63deg, transparent 74%, #999999 78%), -o-linear-gradient(63deg, transparent 34%, #999999 38%, #999999 58%, transparent 62%), #444444;
+  background: linear-gradient(63deg, #999999 23%, transparent 23%) 7px 0, linear-gradient(63deg, transparent 74%, #999999 78%), linear-gradient(63deg, transparent 34%, #999999 38%, #999999 58%, transparent 62%), #444444;
   border-top: 12px solid #282829;
-  background-size: 100% auto;
+  background-size: 16px 48px;
   margin: 0 auto;
   text-align: center;
   background-attachment: fixed;
@@ -62,7 +65,7 @@ nav a.btn {
   -moz-background-clip: padding;
   background-clip: padding-box; }
   nav a.btn.blue {
-    background-color: #8c8c8c;
+    background-color: #4c4c4c;
     -webkit-transition: 0.25s all ease;
     -moz-transition: 0.25s all ease;
     -o-transition: 0.25s all ease;
@@ -73,7 +76,7 @@ nav a.btn {
       background-color: #787878;
       color: rgba(255, 255, 255, 0.75); }
   nav a.btn.green {
-    background-color: #9E9E9E;
+    background-color: #4c4c4c;
     -webkit-transition: 0.25s all ease;
     -moz-transition: 0.25s all ease;
     -o-transition: 0.25s all ease;
@@ -81,7 +84,7 @@ nav a.btn {
     nav a.btn.green:hover {
       background-color: #b0b0b0; }
     nav a.btn.green:active {
-      background-color: #868686;
+      background-color: #787878;
       color: rgba(255, 255, 255, 0.75); }
 
 p.content {

@@ -36,9 +36,9 @@ section, header, footer {
 }
 
 header {
-	background: #5c9cef url(#);
+	@include background(linear-gradient(63deg, #999 23%, transparent 23%) 7px 0, linear-gradient(63deg, transparent 74%, #999 78%), linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%), #444);
 	border-top: 12px solid #282829;
-	background-size: 100% auto;
+	background-size: 16px 48px;
 	margin: 0 auto;
 	text-align: center;
 	background-attachment: fixed;
@@ -72,7 +72,7 @@ nav {
 			@include border-radius(4px);
 			@include background-clip(padding-box);
 			&.blue {    
-				background-color: #8c8c8c;
+				background-color: #4c4c4c;
 				@include transition(0.25s all ease);
 				&:hover {
 					background-color: #afafaf;
@@ -84,13 +84,13 @@ nav {
 				}
 			}
 			&.green {
-				background-color: #9E9E9E;
+				background-color: #4c4c4c;
 				@include transition(0.25s all ease);
 				&:hover {
 					background-color: #b0b0b0;
 				}
 				&:active {
-					background-color: #868686;
+					background-color: #787878;
 					// background-color: #a1a6a9;
 					color: rgba(255, 255, 255, 0.75);
 				}
