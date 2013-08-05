@@ -28,20 +28,31 @@ body {
    ========================================================================== */
 
 html {
-	background-color: #282829;
+	background-color: black;
+	@include background-image(
+		radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+		radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+		radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+		radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px));
+	background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+	background-attachment: fixed;
+
 }
 
 section, header, footer {
 	display: block;
 }
 
+section.content {
+	background-color: rgba(40, 40, 41, 1);
+	padding: 100px;
+}
+
 header {
-	@include background(linear-gradient(63deg, #999 23%, transparent 23%) 7px 0, linear-gradient(63deg, transparent 74%, #999 78%), linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%), #444);
 	border-top: 12px solid #282829;
-	background-size: 16px 48px;
 	margin: 0 auto;
 	text-align: center;
-	background-attachment: fixed;
 	padding: 100px 0 100px;
 	
 	h1 {

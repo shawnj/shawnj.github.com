@@ -20,21 +20,27 @@ body {
    Custom styles
    ========================================================================== */
 html {
-  background-color: #282829; }
+  background-color: black;
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 40, color-stop(0%, #ffffff), color-stop(5%, rgba(255, 255, 255, 0.2)), color-stop(100%, transparent)), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 30, color-stop(0%, #ffffff), color-stop(3.33333%, rgba(255, 255, 255, 0.15)), color-stop(100%, transparent)), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 40, color-stop(0%, #ffffff), color-stop(5%, rgba(255, 255, 255, 0.1)), color-stop(100%, transparent)), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 30, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(6.66667%, rgba(255, 255, 255, 0.1)), color-stop(100%, transparent));
+  background-image: -webkit-radial-gradient(#ffffff, rgba(255, 255, 255, 0.2) 2px, transparent 40px), -webkit-radial-gradient(#ffffff, rgba(255, 255, 255, 0.15) 1px, transparent 30px), -webkit-radial-gradient(#ffffff, rgba(255, 255, 255, 0.1) 2px, transparent 40px), -webkit-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+  background-image: -moz-radial-gradient(#ffffff, rgba(255, 255, 255, 0.2) 2px, transparent 40px), -moz-radial-gradient(#ffffff, rgba(255, 255, 255, 0.15) 1px, transparent 30px), -moz-radial-gradient(#ffffff, rgba(255, 255, 255, 0.1) 2px, transparent 40px), -moz-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+  background-image: -o-radial-gradient(#ffffff, rgba(255, 255, 255, 0.2) 2px, transparent 40px), -o-radial-gradient(#ffffff, rgba(255, 255, 255, 0.15) 1px, transparent 30px), -o-radial-gradient(#ffffff, rgba(255, 255, 255, 0.1) 2px, transparent 40px), -o-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+  background-image: radial-gradient(#ffffff, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(#ffffff, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(#ffffff, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  background-attachment: fixed; }
 
 section, header, footer {
   display: block; }
 
+section.content {
+  background-color: #282829;
+  padding: 100px; }
+
 header {
-  background: -webkit-linear-gradient(63deg, #999999 23%, transparent 23%) 7px 0, -webkit-linear-gradient(63deg, transparent 74%, #999999 78%), -webkit-linear-gradient(63deg, transparent 34%, #999999 38%, #999999 58%, transparent 62%), #444444;
-  background: -moz-linear-gradient(63deg, #999999 23%, transparent 23%) 7px 0, -moz-linear-gradient(63deg, transparent 74%, #999999 78%), -moz-linear-gradient(63deg, transparent 34%, #999999 38%, #999999 58%, transparent 62%), #444444;
-  background: -o-linear-gradient(63deg, #999999 23%, transparent 23%) 7px 0, -o-linear-gradient(63deg, transparent 74%, #999999 78%), -o-linear-gradient(63deg, transparent 34%, #999999 38%, #999999 58%, transparent 62%), #444444;
-  background: linear-gradient(63deg, #999999 23%, transparent 23%) 7px 0, linear-gradient(63deg, transparent 74%, #999999 78%), linear-gradient(63deg, transparent 34%, #999999 38%, #999999 58%, transparent 62%), #444444;
   border-top: 12px solid #282829;
-  background-size: 16px 48px;
   margin: 0 auto;
   text-align: center;
-  background-attachment: fixed;
   padding: 100px 0 100px; }
   header h1 {
     font-size: 5em;
