@@ -45,22 +45,28 @@ section, header, footer {
 }
 
 section {
+	&.header {
+		margin: 0 auto;
+		text-align: center;
+		padding: 100px 0 100px;
+		h1 {
+			font-size: 5em;
+			@include text-shadow(0 2px 3px rgba(40, 41, 42, 0.6),0 4px 0 rgba(150, 150, 150, 0.5),0 9px 5px rgba(0, 0, 0, 0.5));
+			@include transition(.2s);
+		}
+	}
 	&.content {
-		background-color: rgba(229, 229, 229, .5);
+		background-color: rgba(229, 229, 229, .75);
 		padding: 5% 10%;
+		color: #0d0d0d
 	}
 }
 
 header {
-	border-top: 50px solid rgba(40, 40, 41, .9);
-	margin: 0 auto;
-	text-align: center;
-	padding: 100px 0 100px;
-	
-	h1 {
-		font-size: 5em;
-		@include text-shadow(0 2px 3px rgba(40, 41, 42, 0.6),0 4px 0 rgba(150, 150, 150, 0.5),0 9px 5px rgba(0, 0, 0, 0.5));
-		@include transition(.2s);
+	padding: 1% 5%;
+	background: 50px rgba(41, 41, 41, .9);
+	p {
+		vertical-align: middle;
 	}
 }
 
@@ -101,10 +107,6 @@ nav {
 			}
 		}
 	}
-}
-
-p.content {
-	max-width: 960px;
 }
 
 /* ==========================================================================
