@@ -62,9 +62,20 @@ section {
 	}
 }
 
+header, section, article, footer {
+	margin: auto;
+	width: auto;
+	overflow: hidden;
+}
+
 header {
-	padding: .1% 5%;
+	position: fixed;
+	width: 100%;
 	background: 50px rgba(41, 41, 41, .9);
+	article {
+		padding: 0 5px;
+		width: 980px;
+	}
 	p {
 		vertical-align: middle;
 	}
