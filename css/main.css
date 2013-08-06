@@ -50,7 +50,7 @@ section.content {
   color: #0d0d0d; }
 
 header {
-  padding: 1% 5%;
+  padding: .1% 5%;
   background: 50px rgba(41, 41, 41, 0.9); }
   header p {
     vertical-align: middle; }
