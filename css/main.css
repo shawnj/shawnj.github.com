@@ -54,27 +54,18 @@ header, section, article, footer {
   width: auto;
   overflow: hidden; }
 
-header {
-  position: fixed;
-  width: 100%;
-  background: 50px rgba(41, 41, 41, 0.9); }
-  header article {
-    padding: 0 5px;
-    width: 980px; }
-  header p {
-    vertical-align: middle; }
-
 footer {
   padding: 1% 5% 1%; }
 
-nav ul {
+div.nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none; }
-nav li.tile {
+div.nav li.tile {
   display: inline;
   padding: 0 2px; }
-nav a.btn {
+
+a.btn {
   padding: 10px 30px;
   font-size: 19px;
   text-decoration: none;
@@ -87,17 +78,41 @@ nav a.btn {
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box; }
-  nav a.btn.header {
+  a.btn.header {
     background-color: #4c4c4c;
     -webkit-transition: 0.25s all ease;
     -moz-transition: 0.25s all ease;
     -o-transition: 0.25s all ease;
     transition: 0.25s all ease; }
-    nav a.btn.header:hover {
+    a.btn.header:hover {
       background-color: #afafaf; }
-    nav a.btn.header:active {
+    a.btn.header:active {
       background-color: #787878;
       color: rgba(255, 255, 255, 0.75); }
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+header {
+  width: 100%;
+  background: rgba(41, 41, 41, 0.9);
+  border-bottom: 1px solid #191919;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.05); }
+  header article {
+    width: 980px; }
+  header p {
+    vertical-align: middle; }
+
+nav {
+  float: right; }
+  nav li {
+    float: left;
+    margin-right: 5px;
+    padding: 15px 10px 30px 10px;
+    vertical-align: middle; }
+    nav li a {
+      text-decoration: none;
+      color: inherit; }
 
 /* ==========================================================================
    Footer
