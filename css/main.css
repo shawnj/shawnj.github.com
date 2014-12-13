@@ -20,14 +20,7 @@ body {
    Custom styles
    ========================================================================== */
 html {
-  background-color: black;
-  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 40, color-stop(0%, #ffffff), color-stop(5%, rgba(255, 255, 255, 0.2)), color-stop(100%, transparent)), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 30, color-stop(0%, #ffffff), color-stop(3.33333%, rgba(255, 255, 255, 0.15)), color-stop(100%, transparent)), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 40, color-stop(0%, #ffffff), color-stop(5%, rgba(255, 255, 255, 0.1)), color-stop(100%, transparent)), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 30, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(6.66667%, rgba(255, 255, 255, 0.1)), color-stop(100%, transparent));
-  background-image: -webkit-radial-gradient(#ffffff, rgba(255, 255, 255, 0.2) 2px, transparent 40px), -webkit-radial-gradient(#ffffff, rgba(255, 255, 255, 0.15) 1px, transparent 30px), -webkit-radial-gradient(#ffffff, rgba(255, 255, 255, 0.1) 2px, transparent 40px), -webkit-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
-  background-image: -moz-radial-gradient(#ffffff, rgba(255, 255, 255, 0.2) 2px, transparent 40px), -moz-radial-gradient(#ffffff, rgba(255, 255, 255, 0.15) 1px, transparent 30px), -moz-radial-gradient(#ffffff, rgba(255, 255, 255, 0.1) 2px, transparent 40px), -moz-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
-  background-image: -o-radial-gradient(#ffffff, rgba(255, 255, 255, 0.2) 2px, transparent 40px), -o-radial-gradient(#ffffff, rgba(255, 255, 255, 0.15) 1px, transparent 30px), -o-radial-gradient(#ffffff, rgba(255, 255, 255, 0.1) 2px, transparent 40px), -o-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
-  background-image: radial-gradient(#ffffff, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(#ffffff, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(#ffffff, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
-  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  background-color: grey;
   background-attachment: fixed; }
 
 section, header, footer {
@@ -40,9 +33,9 @@ section.header {
   section.header h1 {
     font-size: 5em;
     text-shadow: 0 2px 3px rgba(40, 41, 42, 0.6), 0 4px 0 rgba(150, 150, 150, 0.5), 0 9px 5px rgba(0, 0, 0, 0.5);
-    -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
     -o-transition: 0.2s;
+    -webkit-transition: 0.2s;
     transition: 0.2s; }
 section.content {
   background-color: rgba(229, 229, 229, 0.75);
@@ -70,20 +63,19 @@ a.btn {
   font-size: 19px;
   text-decoration: none;
   color: #fff;
-  -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
-  -webkit-background-clip: padding;
   -moz-background-clip: padding;
+  -o-background-clip: padding-box;
+  -webkit-background-clip: padding;
   background-clip: padding-box; }
   a.btn.header {
     background-color: #4c4c4c;
-    -webkit-transition: 0.25s all ease;
-    -moz-transition: 0.25s all ease;
-    -o-transition: 0.25s all ease;
-    transition: 0.25s all ease; }
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
     a.btn.header:hover {
       background-color: #afafaf; }
     a.btn.header:active {
@@ -94,25 +86,60 @@ a.btn {
    Header
    ========================================================================== */
 header {
+  line-height: 1;
+  height: 10%;
   width: 100%;
+  position: fixed;
   background: rgba(41, 41, 41, 0.9);
   border-bottom: 1px solid #191919;
-  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.05); }
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  header.sticky {
+    border-bottom: none;
+    height: 48px;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
   header article {
-    width: 980px; }
+    width: 100%;
+    height: 100%; }
   header p {
     vertical-align: middle; }
 
 nav {
-  float: right; }
-  nav li {
-    float: left;
-    margin-right: 5px;
-    padding: 15px 10px 30px 10px;
-    vertical-align: middle; }
-    nav li a {
-      text-decoration: none;
-      color: inherit; }
+  float: right;
+  width: 100%;
+  height: 100%; }
+  nav table {
+    height: 100%;
+    width: 100%;
+    margin: 0 0 0 0; }
+    nav table th {
+      font-weight: normal;
+      vertical-align: middle;
+      text-align: right; }
+      nav table th.left-cell {
+        text-align: left;
+        width: 50%;
+        padding-left: 3%; }
+      nav table th.right-cell {
+        text-align: right;
+        width: 50%;
+        margin-right: 3%; }
+  nav ul {
+    width: 100%;
+    margin: 0;
+    float: right;
+    -webkit-padding-start: 0; }
+    nav ul li {
+      float: right;
+      padding: 0 3% 0 0; }
+      nav ul li a {
+        text-decoration: none;
+        color: inherit; }
 
 /* ==========================================================================
    Footer

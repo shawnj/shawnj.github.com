@@ -100,10 +100,10 @@ body {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 
-a:focus {
+/*a:focus {
     outline: thin dotted;
 }
-
+*/
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
@@ -288,13 +288,13 @@ sub {
  * Address margins set differently in IE 6/7.
  */
 
-dl,
+/*dl,
 menu,
 ol,
 ul {
     margin: 1em 0;
 }
-
+*/
 dd {
     margin: 0 0 0 40px;
 }
@@ -303,11 +303,11 @@ dd {
  * Address paddings set differently in IE 6/7.
  */
 
-menu,
+/*menu,
 ol,
 ul {
     padding: 0 0 0 40px;
-}
+}*/
 
 /**
  * Correct list images handled incorrectly in IE 7.
@@ -521,7 +521,8 @@ textarea {
  * Remove most spacing between table cells.
  */
 
-table {
+/*table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+*/

@@ -1,4 +1,5 @@
 @import "compass";
+@import "mixins";
 
 html,
 button,
@@ -28,14 +29,7 @@ body {
    ========================================================================== */
 
 html {
-	background-color: black;
-	@include background-image(
-		radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-		radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-		radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-		radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px));
-	background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
-	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+	background-color: grey;
 	background-attachment: fixed;
 
 }
@@ -72,18 +66,20 @@ footer {
 	padding: 1% 5% 1%;
 }
 
-div.nav {
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-	}
-	li {
-		&.tile {
-			display: inline;
-			padding: 0 2px;
-		}
-	}
+div {
+    &.nav {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        li {
+            &.tile {
+                display: inline;
+                padding: 0 2px;
+            }
+        }
+    }
 }
 
 a {
@@ -96,7 +92,7 @@ a {
 		@include background-clip(padding-box);
 		&.header {    
 			background-color: #4c4c4c;
-			@include transition(0.25s all ease);
+			@include transition(0.5s all ease);
 			&:hover {
 				background-color: #afafaf;
 			}
@@ -113,40 +109,85 @@ a {
    ========================================================================== */
 
 header {
-	width: 100%;
-	background: rgba(41, 41, 41, .9);
-	border-bottom: 1px solid #191919;
-	box-shadow: 0 10px 0 rgba(0, 0, 0, 0.05);
-	article {
-		width: 980px;
-	}
-	p {
-		vertical-align: middle;
-	}
-	// &.logo {
-	// 	background: url(../img/logo.png) center center no-repeat;
-	// 	margin-top: 33px;
-	// 	margin-left: 10px;
-	// 	float: left;
-	// 	width: 150px;
-	// 	height: 35px;
-	// }
+	line-height: 1;
+	height: 10%;
+    width: 100%;
+    position: fixed;
+    background: rgba(41, 41, 41, .9);
+    border-bottom: 1px solid #191919;
+    @include transition(all 0.5s ease);
+    &.sticky {
+        border-bottom: none;
+        height: 48px;
+        @include transition(all 0.5s ease);
+    }
+    article {
+        width: 100%;
+        height: 100%;
+    }
+    p {
+        vertical-align: middle;
+    }
+    // .logo {
+    // 	background: url(../apple-touch-icon-144x144-precomposed.png) center center no-repeat;
+    // 	margin-top: 33px;
+    // 	margin-left: 10px;
+    // 	float: left;
+    // 	width: 150px;
+    // 	height: 35px;
+    // }
 }
 
 nav {
-	float: right;
-	li {
-		float: left;
-		margin-right: 5px;
-		padding: 15px 10px 30px 10px;
-		vertical-align: middle;
-		a {
-			// display: block;
-			text-decoration: none;
-			color: inherit;
-		}
-	}
+    float: right;
+    width: 100%;
+    height: 100%;
+    table {
+        height: 100%;
+        width: 100%;
+        margin: 0 0 0 0;
+        .logo {
+            // min-width: 200px;
+            // float: left;
+            // display: block;
+        }
+        th {
+            font-weight: normal;
+            vertical-align: middle;
+            text-align: right;
+            &.left-cell {
+            	text-align: left;
+            	width: 50%;
+            	padding-left: 3%;
+            }
+            &.right-cell {
+            	text-align: right;
+            	width: 50%;
+            	margin-right: 3%;
+            }
+        }
+    }
+    ul {
+        width: 100%;
+        margin: 0;
+        // padding: 0;
+        float: right;
+        -webkit-padding-start: 0;
+        li {
+            float: right;
+            // margin: 0 5% 0 0;
+            padding: 0 3% 0 0;
+            // display: block;
+            a {
+                // display: block;
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
 }
+
+
 
 /* ==========================================================================
    Footer
