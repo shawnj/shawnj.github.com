@@ -64,6 +64,19 @@ header, section, article, footer {
 
 footer {
 	padding: 1% 5% 1%;
+	p {
+		text-align: center;
+	}
+	a {
+		color: white;
+		text-decoration: none;
+	}
+	a:hover {
+		background-color: grey;
+		@include transition(0.5s all ease);
+		border-bottom: 2px solid #adadad;
+		margin-bottom: 1px;
+	}
 }
 
 div {

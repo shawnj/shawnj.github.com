@@ -49,6 +49,19 @@ header, section, article, footer {
 
 footer {
   padding: 1% 5% 1%; }
+  footer p {
+    text-align: center; }
+  footer a {
+    color: white;
+    text-decoration: none; }
+  footer a:hover {
+    background-color: grey;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-bottom: 2px solid #adadad;
+    margin-bottom: 1px; }
 
 div.nav ul {
   margin: 0;
