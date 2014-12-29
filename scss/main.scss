@@ -29,8 +29,7 @@ body {
    ========================================================================== */
 
 html {
-	background-color: grey;
-	background-attachment: fixed;
+	background: #EFEFEF url("http://b.shawnj.co/wp-content/uploads/2014/12/cropped-5cf8b62b.jpg") fixed;
 
 }
 
@@ -62,23 +61,6 @@ header, section, article, footer {
 	overflow: hidden;
 }
 
-footer {
-	padding: 1% 5% 1%;
-	p {
-		text-align: center;
-	}
-	a {
-		color: white;
-		text-decoration: none;
-	}
-	a:hover {
-		background-color: grey;
-		@include transition(0.5s all ease);
-		border-bottom: 2px solid #adadad;
-		margin-bottom: 1px;
-	}
-}
-
 div {
     &.nav {
         ul {
@@ -104,10 +86,11 @@ a {
 		@include border-radius(4px);
 		@include background-clip(padding-box);
 		&.header {    
-			background-color: #4c4c4c;
-			@include transition(0.5s all ease);
+			background: #afafaf transparent;
+			border: 1px solid #fff;
+			// @include transition(0.5s all ease);
 			&:hover {
-				background-color: #afafaf;
+				background: rgba(0, 0, 0, 0.1);
 			}
 			&:active {
 				background-color: #787878;
@@ -126,13 +109,16 @@ header {
 	height: 10%;
     width: 100%;
     position: fixed;
-    background: rgba(41, 41, 41, .9);
-    border-bottom: 1px solid #191919;
-    @include transition(all 0.5s ease);
+	// right: 0;
+	// left: 0;
+	// z-index: 1030;
+    background: rgba(0, 0, 0, 0.6);
+    // border-bottom: 1px solid #191919;
+    // @include transition(all 0.2s ease);
     &.sticky {
         border-bottom: none;
         height: 48px;
-        @include transition(all 0.5s ease);
+        // @include transition(all 0.5s ease);
     }
     article {
         width: 100%;
@@ -206,6 +192,24 @@ nav {
    Footer
    ========================================================================== */
 
+footer {
+	padding: 1% 5% 1%;
+	position: fixed;
+	bottom: 0;
+	p {
+		text-align: center;
+	}
+	a {
+		color: white;
+		text-decoration: none;
+	}
+	a:hover {
+		background-color: grey;
+		@include transition(0.5s all ease);
+		border-bottom: 2px solid #adadad;
+		margin-bottom: 1px;
+	}
+}
 
 
 /* ==========================================================================

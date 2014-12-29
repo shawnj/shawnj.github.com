@@ -1,11 +1,11 @@
-$(window).scroll(function() {
-if ($(this).scrollTop() > 1){  
-    $('header').addClass("sticky");
-  }
-  else{
-    $('header').removeClass("sticky");
-  }
-});
+// $(window).scroll(function() {
+// if ($(this).scrollTop() > 1){  
+//     $('header').addClass("sticky");
+//   }
+//   else{
+//     $('header').removeClass("sticky");
+//   }
+// });
 
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
