@@ -15,13 +15,13 @@ body {
 	line-height: 1.4;
 }
 
-::-moz-selection {
-	background: #a0a3a7;
-}
+// ::-moz-selection {
+// 	background: #a0a3a7;
+// }
 
-::selection {
-	background: #a0a3a7;
-}
+// ::selection {
+// 	background: #a0a3a7;
+// }
 
 
 /* ==========================================================================
@@ -29,7 +29,7 @@ body {
    ========================================================================== */
 
 html {
-	background: #EFEFEF url("http://b.shawnj.co/wp-content/uploads/2014/12/cropped-5cf8b62b.jpg") fixed;
+	background: #EFEFEF url("http://b.shawnj.co/wp-content/uploads/2014/12/cropped-5cf8b62b.jpg");
 
 }
 
@@ -93,8 +93,7 @@ a {
 				background: rgba(0, 0, 0, 0.1);
 			}
 			&:active {
-				background-color: #787878;
-				color: rgba(255, 255, 255, 0.75);
+				background: rgba(0, 0, 0, 0.1);
 			}
 		}
 	}
@@ -106,7 +105,7 @@ a {
 
 header {
 	line-height: 1;
-	height: 10%;
+	height: 50px;
     width: 100%;
     position: fixed;
 	// right: 0;
@@ -158,11 +157,24 @@ nav {
             	text-align: left;
             	width: 50%;
             	padding-left: 3%;
+            	ul {
+            		float: left;
+            		li {
+            			float: left;
+            		}
+            	}
+
             }
             &.right-cell {
             	text-align: right;
             	width: 50%;
-            	margin-right: 3%;
+            	padding-right: 3%;
+            	ul {
+            		float: right;
+            		li {
+            			float: right;
+            		}
+            	}
             }
         }
     }
@@ -170,7 +182,6 @@ nav {
         width: 100%;
         margin: 0;
         // padding: 0;
-        float: right;
         -webkit-padding-start: 0;
         li {
             float: right;
@@ -193,7 +204,8 @@ nav {
    ========================================================================== */
 
 footer {
-	padding: 1% 5% 1%;
+	// padding: 1% 5% 1% 5%;
+	width: 100%;
 	position: fixed;
 	bottom: 0;
 	p {
@@ -204,10 +216,10 @@ footer {
 		text-decoration: none;
 	}
 	a:hover {
-		background-color: grey;
-		@include transition(0.5s all ease);
-		border-bottom: 2px solid #adadad;
+		// @include transition(0.5s all ease);
+		border-bottom: 1px solid #adadad;
 		margin-bottom: 1px;
+		background: rgba(0, 0, 0, 0.1);
 	}
 }
 
