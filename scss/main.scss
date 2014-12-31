@@ -29,12 +29,10 @@ body {
    ========================================================================== */
 
 html {
-    background: #EFEFEF url("http://b.shawnj.co/wp-content/uploads/2014/12/cropped-5cf8b62b.jpg") no-repeat center linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("http://b.shawnj.co/wp-content/uploads/2014/12/cropped-5cf8b62b.jpg") no-repeat center;
     background-size: cover;
     min-height: 100%;
 }
-
-
 
 section, header, footer {
 	display: block;
